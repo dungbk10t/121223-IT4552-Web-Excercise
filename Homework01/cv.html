@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        .box {
+            display: flex;
+        }
+
+        .box-left {
+            width: 30%;
+            background: rgb(152, 184, 243);
+            float: left;
+            /* height: auto; */
+            /* flex: 30%; */
+        }
+
+        .box-right {
+            width: 70%;
+            background: rgb(219, 219, 194);
+            float: right;
+            /* height: auto; */
+            /* flex: 70%; */
+        }
+        
+        .box-avatar {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px blue solid;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .title-left {
+            padding-left: 40px;
+        }
+        
+        .title-right {
+            margin-top: 10px;
+        }
+
+        .info-left {
+            padding-left: 40px;
+            margin-bottom: -20px;
+            color: rgb(132, 0, 255);
+        }
+
+        .info-right {
+            text-align: right;
+            margin-right: 70px;
+            margin-bottom: -20px;
+            color: rgb(132, 0, 255);
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            border: 2px black solid;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 3px;
+            margin-bottom: -30px;
+        }
+        
+        .line-left {
+            width: 70%; 
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+
+        .line-right {
+            width: 90%; 
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+
+        .box-item-left-content {
+            padding-left: 50px;
+            padding-bottom: 10px;
+        }
+
+        .box-item-right {
+            margin-left: 30px;
+        }
+
+        .name {
+            font-size: 35px;
+            color: blue;
+            margin-bottom: -20px;
+        }
+
+        .job {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            color: rgb(212, 38, 14);
+        }
+
+        .contact-icon {
+            width: 15px;
+            height: 15px;
+            margin-left: -40px;
+            margin-right: 26px;
+        }
+
+        .li-wrap {
+            display: flex;
+        }
+
+        .date {
+            width: 30%;
+            display: list-item;
+        }
+        
+        .degree {
+            color: lightseagreen;
+        }
+
+        .exp {
+            width: 70%;
+            margin-top: -18px;
+            margin-bottom: 30px;
+        }
+
+        .exp-title {
+            color: lightseagreen;
+        }
+        
+        .dashed { list-style-type: none; }
+        .dashed > li { text-indent: 15px;}
+        .dashed > li:before {
+            content: "- ";
+            position: absolute;
+            margin-left: -45px; 
+        }
+
+    </style>
+</head>
+<body class="box">
+    <div class="box-left">
+        <div class="box-avatar">
+            <img class="avatar" src="./img/avatar.jpg" alt="Avatar">
+        </div>
+
+        <!-- Su dung: border / width / height / padding -->
+        <div class="box-item-left">
+            <!-- Muc tieu nghe nghiep -->
+            <div class="title-left">
+                <h3 class="info-left">Mục tiêu nghề nghiệp</h3>
+                <img class="icon" src="./img/news.png" alt="Job">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <p>Mong muốn trở thành 1 kỹ sư giỏi</p>
+            </div>
+
+            <!-- Ki nang -->
+            <div class="title-left">
+                <h3 class="info-left">Kĩ năng</h3>
+                <img class="icon" src="./img/skills.png" alt="Skill">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <ul class="dashed">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                </ol>
+            </div>
+
+            <!-- Uu / khuyet diem -->
+            <div class="title-left">
+                <h3 class="info-left">Ưu điểm - Khuyết điểm</h3>
+                <img class="icon" src="./img/medal.png" alt="Strong point">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <div style="width: 50%; float: left;">
+                    <p>Ưu điểm</p>
+                    <ul class="dashed">
+                        <li>Không ngại khó</li>
+                        <li>Nhiệt tình</li>
+                        <li>Nhanh nhẹn</li>
+                        <li>Trách nhiệm</li>
+                        <li>Luôn sáng tạo</li>
+                    </ul>
+                </div>
+                <div style="width: 50%; float: right;">
+                    <p>Khuyết điểm</p>
+                    <ul class="dashed">
+                        <li>Ngại giao tiếp</li>
+                        <li>Ít nói</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-right">
+        <div class="box-item-right">
+            <h2 class="name">Pham Tuan Dung - 20176728</h2>
+            <h3 class="job">Sinh viên</h3>
+            <div class="contact">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img class="contact-icon" src="./img/phone.png" alt="Phone">
+                        <span>123456789</span>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="./img/mail.png" alt="Mail">
+                        <span>dungbk10t@gmail.com</span>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="./img/address.png" alt="Address">
+                        <span>Hanoi, Vietnam</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hoc van -->
+            <div class="title-right">
+                <h3 class="info-right">Học vấn</h3>
+                <img class="icon" src="./img/news.png" alt="Degree">
+                <hr class="line-right"/>
+            </div>
+
+            <div class="box-item-right-content">
+                <ul>
+                    <li class="li-wrap">
+                        <p class="date">2014 - 2016</p>
+                        <p class="degree">Home</p>
+                    </li>
+                    <li class="li-wrap">
+                        <p class="date">2016 - 2018</p>
+                        <p class="degree">Alone</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kinh nghiem -->
+            <div class="title-right">
+                <h3 class="info-right">Kinh nghiệm</h3>
+                <img class="icon" src="./img/news.png" alt="Experience">
+                <hr class="line-right"/>
+            </div>
+
+            <div class="box-item-right-content">
+                <ul>
+                    <li class="li-wrap">
+                        <div class="date">4/2017 - 5/2018</div>
+                        <div class="exp">
+                            <p class="exp-title">Facebook.com</p>
+                            <p class="exp-job"><i>Telesale</i></p>
+                            <ul class="dashed">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="li-wrap">
+                        <div class="date">5/2018 - 12/2018</div>
+                        <div class="exp">
+                            <p class="exp-title">Google.com</p>
+                            <p class="exp-job"><i>Developer</i></p>
+                            <ul class="dashed">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="li-wrap">
+                        <div class="date">1/2018 - Đến nay</div>
+                        <div class="exp">
+                            <p class="exp-title">Silicon Valley</p>
+                            <p class="exp-job"><i>CEO</i></p>
+                            <ul class="dashed">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
